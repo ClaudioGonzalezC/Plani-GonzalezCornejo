@@ -4,9 +4,9 @@ Plani+Gonzalez
 ├── readme.txt
 │
 ├── scss/
-│   └── styles.scss
-│   ├── styles.css
-│   └── styles.css.map
+│   └── app.scss
+│   ├── app.css
+│   └── app.map
 │  
 ├── js/
 │   └── main.js
