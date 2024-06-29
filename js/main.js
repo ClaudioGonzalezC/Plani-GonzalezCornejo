@@ -26,7 +26,7 @@ solicitarNombre();
     // Función para obtener los datos del JSON
     async function obtenerPreciosViajes() {
         try {
-            const response = await fetch('storage.json');
+            const response = await fetch('./storage/data.json');
             if (!response.ok) {
                 throw new Error('Error al obtener los datos del archivo JSON');
             }
