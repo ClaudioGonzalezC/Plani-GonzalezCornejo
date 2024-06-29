@@ -3,7 +3,7 @@
 
 /*** Header ***/
 header {
-    background: url('/assets/images/background-header.webp');
+    background: url('./assets/images/background-header.webp');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -116,10 +116,7 @@ header {
                             top: 73px;
 
                             li {
-                                
-                                a {
 
-                                }
                                 a:hover {
                                     border-radius: 12px;
                                     background-color: rgba(255,255,255,.04);
@@ -139,9 +136,6 @@ header {
 
                             li {
 
-                                a {
-
-                                }
                                 a:hover {
                                     border-radius: 12px;
                                     background-color: rgba(255,255,255,.04);
