@@ -1,0 +1,18 @@
+Plani+Gonzalez
+│
+├── index.html
+├── readme.txt
+│
+├── scss/
+│   └── styles.scss
+│   ├── styles.css
+│   └── styles.css.map
+│  
+├── js/
+│   └── main.js
+│
+├── assets/
+│   └── images/
+│
+└── storage/
+    └── data.json
