@@ -613,28 +613,16 @@ header {
           align-items: center;
 }
 
-input#pais, select#ciudad, label {
-  font-size: 1.6em;
-  color: #363636;
-  font-weight: 400;
-}
-
-input#pais, select#ciudad {
-  max-width: 230px;
-  width: 100%;
-}
-
-.valor-adicional p {
-  font-size: 1.6em;
-  color: #363636;
-  font-weight: 400;
-}
-
 .container__input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 10px;
+}
+
+div[class^=item] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .item1 {
@@ -647,6 +635,29 @@ input#pais, select#ciudad {
 
 .item3 {
   grid-column: span 2;
+}
+
+input#pais, select#ciudad, label {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 400;
+}
+
+input#pais, select#ciudad {
+  max-width: 230px;
+  width: 100%;
+}
+
+.valor__adicional p {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 400;
+}
+
+#resultado {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 400;
 }
 
 /*** Navegacion ***/

@@ -13,6 +13,30 @@
     align-items: center;
 }
 
+.container__input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+div[class^="item"] { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item1 {
+    grid-column: span 2;
+}
+
+.item2 {
+    grid-column: span 2;
+}
+
+.item3 {
+    grid-column: span 2;
+}
+
 input#pais, select#ciudad, label {
     font-size: v.$h3;
     color: v.$negro;
@@ -24,25 +48,14 @@ input#pais, select#ciudad {
     width: 100%;
 }
 
-.valor-adicional p {
+.valor__adicional p {
     font-size: v.$h3;
     color: v.$negro;
     font-weight: v.$bold;
 }
 
-
-.container__input {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-}
-.item1 {
-    grid-column: span 2;
-}
-.item2 {
-    grid-column: span 2;
-}
-.item3 {
-    grid-column: span 2;
+#resultado {
+    font-size: v.$h3;
+    color: v.$negro;
+    font-weight: v.$bold;
 }
