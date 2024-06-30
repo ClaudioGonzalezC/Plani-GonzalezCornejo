@@ -25,7 +25,10 @@ solicitarNombre();
 document.addEventListener('DOMContentLoaded', () => {
     const paisInput = document.getElementById('pais');
     const ciudadInput = document.getElementById('ciudad');
+    const seguroInput = document.getElementById('seguro');
     const resultadoDiv = document.getElementById('resultado');
+
+    const valorSeguro = 50000;
 
     // Cargar datos desde el JSON
     fetch('./storage/data.json')
@@ -56,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             ciudadInput.addEventListener('input', mostrarPrecio);
+            seguroInput.addEventListener('change', mostrarPrecio);
 
             function mostrarPrecio() {
                 const paisSeleccionado = paisInput.value;
@@ -66,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const ciudadEncontrada = paisEncontrado.ciudades.find(c => c.nombre.toLowerCase() === ciudadSeleccionada.toLowerCase());
 
                     if (ciudadEncontrada) {
-                        resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${ciudadEncontrada.precio}`;
+                        const precioViaje = ciudadEncontrada.precio;
+                        const precioTotal = seguroInput.checked ? precioViaje + valorSeguro : precioViaje;
+                        resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${precioTotal} (${seguroInput.checked ? 'con' : 'sin'} seguro)`;
                     } else {
                         resultadoDiv.textContent = `No tenemos información sobre la ciudad ${ciudadSeleccionada}`;
                     }
