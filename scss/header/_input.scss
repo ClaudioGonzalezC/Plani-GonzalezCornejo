@@ -1,5 +1,18 @@
+.header__busqueda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: v.$transparencia;
+    padding: 30px;
+    border-radius: v.$border-radius;
+}
+
 input#pais, select#ciudad, label {
-    font-size: 1.6em;
-    color: #363636;
-    font-weight: 400;
+    font-size: v.$h3;
+    color: v.$negro;
+    font-weight: v.$bold;
+}
+
+input#pais, select#ciudad {
+    max-width: 230px;
+    width: 100%;
 }

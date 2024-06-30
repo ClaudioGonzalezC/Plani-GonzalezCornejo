@@ -598,10 +598,23 @@ header {
   overflow: hidden;
 }
 
+.header__busqueda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
 input#pais, select#ciudad, label {
   font-size: 1.6em;
   color: #363636;
   font-weight: 400;
+}
+
+input#pais, select#ciudad {
+  max-width: 230px;
+  width: 100%;
 }
 
 /*** Navegacion ***/
