@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para cargar los datos desde el JSON
     function cargarDatos() {
-        fetch('./data/destinos.json')
+        fetch('./storage/data.json')
             .then(response => response.json())
             .then(data => {
                 preciosViajes = data;
