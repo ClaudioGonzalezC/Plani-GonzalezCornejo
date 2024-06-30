@@ -618,19 +618,24 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 10px;
 }
 
 .item1 {
   grid-column: span 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item2 {
   grid-column: span 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item3 {
@@ -678,14 +683,16 @@ input[type=checkbox] {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #007BFF;
-  color: white;
-  font-size: 16px;
+  background-color: #cbc9c7;
+  color: #363636;
+  font-size: 1.4em;
   cursor: pointer;
+  border-radius: 32px;
+  margin-bottom: 2em;
 }
 
 .header__busqueda button:hover {
-  background-color: #0056b3;
+  background-color: #707070;
 }
 
 /*** Navegacion ***/
