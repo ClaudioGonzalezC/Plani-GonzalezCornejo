@@ -83,11 +83,15 @@
                     </div>
                 </div>
             </section>
-            <section class="header__busqueda">
-                <label for="pais">País:</label>
-                <input type="text" id="pais" name="pais" placeholder="Escribe aquí tu país de destino">
-                <label for="ciudad">Ciudad:</label>
-                <select id="ciudad" name="ciudad" disabled></select>
+            <section class="header__busqueda container">
+                <div class="item1">
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" placeholder="Escribe aquí tu país de destino">
+                </div>
+                <div class="item2">
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" name="ciudad" disabled></select>
+                </div>
                 <div>
                     <input type="checkbox" id="seguro" name="seguro">
                     <label for="seguro">Agregar seguro de viaje</label>
@@ -95,8 +99,8 @@
                 <div class="valor-adicional">
                     <p>(valor adicional: $50,000)</p>
                 </div>
-                <div id="resultado"></div>
-            </section>                      
+                <div class="item3" id="resultado"></div>
+            </section>                    
             <section class="header__destinos">
                 <div class="header__titulos">
                     <h2>Destinos Populares</h2>

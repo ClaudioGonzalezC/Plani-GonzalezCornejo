@@ -10,6 +10,7 @@
     border-radius: v.$border-radius;
     max-width: 500px;
     row-gap: 10px;
+    align-items: center;
 }
 
 input#pais, select#ciudad, label {
@@ -27,4 +28,21 @@ input#pais, select#ciudad {
     font-size: v.$h3;
     color: v.$negro;
     font-weight: v.$bold;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+.item1 {
+    grid-column: span 2;
+}
+.item2 {
+    grid-column: span 2;
+}
+.item3 {
+    grid-column: span 2;
 }
