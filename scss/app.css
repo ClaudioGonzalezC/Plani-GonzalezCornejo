@@ -683,7 +683,7 @@ input[type=checkbox] {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #cbc9c7;
+  background-color: #F7DE94;
   color: #363636;
   font-size: 1.4em;
   cursor: pointer;
@@ -692,7 +692,7 @@ input[type=checkbox] {
 }
 
 .header__busqueda button:hover {
-  background-color: #707070;
+  background-color: #eecc6a;
 }
 
 /*** Navegacion ***/

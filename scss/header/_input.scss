@@ -77,7 +77,7 @@ input[type="checkbox"] {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: v.$gris-m;
+    background-color: v.$amarillo;
     color: v.$negro;
     font-size: v.$p14;
     cursor: pointer;
@@ -85,5 +85,5 @@ input[type="checkbox"] {
     margin-bottom:2em;
 }
 .header__busqueda button:hover {
-    background-color: v.$gris-l;
+    background-color: v.$amarillo-hover;
 }
