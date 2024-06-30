@@ -4,28 +4,180 @@
             "pais": "Chile",
             "ciudades": [
                 { "nombre": "Villarrica", "precio": 100000 },
-                { "nombre": "Freire", "precio": 80000 }
+                { "nombre": "Freire", "precio": 80000 },
+                { "nombre": "Santiago", "precio": 150000 },
+                { "nombre": "Valparaíso", "precio": 120000 }
             ]
         },
         {
             "pais": "Inglaterra",
             "ciudades": [
                 { "nombre": "Londres", "precio": 2000000 },
-                { "nombre": "Liverpool", "precio": 80000 }
+                { "nombre": "Liverpool", "precio": 80000 },
+                { "nombre": "Manchester", "precio": 75000 },
+                { "nombre": "Birmingham", "precio": 70000 }
             ]
         },
         {
             "pais": "Francia",
             "ciudades": [
                 { "nombre": "Paris", "precio": 1800000 },
-                { "nombre": "Lyon", "precio": 1800000 }
+                { "nombre": "Lyon", "precio": 1800000 },
+                { "nombre": "Marsella", "precio": 1700000 },
+                { "nombre": "Niza", "precio": 1600000 }
             ]
         },
         {
             "pais": "Argentina",
             "ciudades": [
                 { "nombre": "Buenos Aires", "precio": 1800000 },
-                { "nombre": "Mendoza", "precio": 1800000 }
+                { "nombre": "Mendoza", "precio": 1800000 },
+                { "nombre": "Córdoba", "precio": 1600000 },
+                { "nombre": "Rosario", "precio": 1500000 }
+            ]
+        },
+        {
+            "pais": "Estados Unidos",
+            "ciudades": [
+                { "nombre": "Nueva York", "precio": 2500000 },
+                { "nombre": "Los Ángeles", "precio": 2300000 },
+                { "nombre": "Chicago", "precio": 2200000 },
+                { "nombre": "Houston", "precio": 2100000 }
+            ]
+        },
+        {
+            "pais": "Brasil",
+            "ciudades": [
+                { "nombre": "Río de Janeiro", "precio": 1800000 },
+                { "nombre": "Sao Paulo", "precio": 1700000 },
+                { "nombre": "Brasilia", "precio": 1600000 },
+                { "nombre": "Salvador", "precio": 1500000 }
+            ]
+        },
+        {
+            "pais": "México",
+            "ciudades": [
+                { "nombre": "Ciudad de México", "precio": 2000000 },
+                { "nombre": "Guadalajara", "precio": 1800000 },
+                { "nombre": "Monterrey", "precio": 1700000 },
+                { "nombre": "Cancún", "precio": 1600000 }
+            ]
+        },
+        {
+            "pais": "Italia",
+            "ciudades": [
+                { "nombre": "Roma", "precio": 2000000 },
+                { "nombre": "Milán", "precio": 1900000 },
+                { "nombre": "Nápoles", "precio": 1800000 },
+                { "nombre": "Turín", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "España",
+            "ciudades": [
+                { "nombre": "Madrid", "precio": 1800000 },
+                { "nombre": "Barcelona", "precio": 1700000 },
+                { "nombre": "Valencia", "precio": 1600000 },
+                { "nombre": "Sevilla", "precio": 1500000 }
+            ]
+        },
+        {
+            "pais": "Japón",
+            "ciudades": [
+                { "nombre": "Tokio", "precio": 2500000 },
+                { "nombre": "Osaka", "precio": 2400000 },
+                { "nombre": "Nagoya", "precio": 2300000 },
+                { "nombre": "Kioto", "precio": 2200000 }
+            ]
+        },
+        {
+            "pais": "Australia",
+            "ciudades": [
+                { "nombre": "Sídney", "precio": 2600000 },
+                { "nombre": "Melbourne", "precio": 2500000 },
+                { "nombre": "Brisbane", "precio": 2400000 },
+                { "nombre": "Perth", "precio": 2300000 }
+            ]
+        },
+        {
+            "pais": "Alemania",
+            "ciudades": [
+                { "nombre": "Berlín", "precio": 2000000 },
+                { "nombre": "Hamburgo", "precio": 1900000 },
+                { "nombre": "Múnich", "precio": 1800000 },
+                { "nombre": "Colonia", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "Canadá",
+            "ciudades": [
+                { "nombre": "Toronto", "precio": 2200000 },
+                { "nombre": "Vancouver", "precio": 2100000 },
+                { "nombre": "Montreal", "precio": 2000000 },
+                { "nombre": "Calgary", "precio": 1900000 }
+            ]
+        },
+        {
+            "pais": "India",
+            "ciudades": [
+                { "nombre": "Delhi", "precio": 1700000 },
+                { "nombre": "Mumbai", "precio": 1600000 },
+                { "nombre": "Bangalore", "precio": 1500000 },
+                { "nombre": "Chennai", "precio": 1400000 }
+            ]
+        },
+        {
+            "pais": "Rusia",
+            "ciudades": [
+                { "nombre": "Moscú", "precio": 2000000 },
+                { "nombre": "San Petersburgo", "precio": 1900000 },
+                { "nombre": "Novosibirsk", "precio": 1800000 },
+                { "nombre": "Ekaterimburgo", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "Sudáfrica",
+            "ciudades": [
+                { "nombre": "Johannesburgo", "precio": 1800000 },
+                { "nombre": "Ciudad del Cabo", "precio": 1700000 },
+                { "nombre": "Durban", "precio": 1600000 },
+                { "nombre": "Pretoria", "precio": 1500000 }
+            ]
+        },
+        {
+            "pais": "China",
+            "ciudades": [
+                { "nombre": "Beijing", "precio": 2200000 },
+                { "nombre": "Shanghái", "precio": 2100000 },
+                { "nombre": "Guangzhou", "precio": 2000000 },
+                { "nombre": "Shenzhen", "precio": 1900000 }
+            ]
+        },
+        {
+            "pais": "Nueva Zelanda",
+            "ciudades": [
+                { "nombre": "Auckland", "precio": 2600000 },
+                { "nombre": "Wellington", "precio": 2500000 },
+                { "nombre": "Christchurch", "precio": 2400000 },
+                { "nombre": "Hamilton", "precio": 2300000 }
+            ]
+        },
+        {
+            "pais": "Corea del Sur",
+            "ciudades": [
+                { "nombre": "Seúl", "precio": 2000000 },
+                { "nombre": "Busan", "precio": 1900000 },
+                { "nombre": "Incheon", "precio": 1800000 },
+                { "nombre": "Daegu", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "Suecia",
+            "ciudades": [
+                { "nombre": "Estocolmo", "precio": 1800000 },
+                { "nombre": "Gotemburgo", "precio": 1700000 },
+                { "nombre": "Malmö", "precio": 1600000 },
+                { "nombre": "Uppsala", "precio": 1500000 }
             ]
         }
     ]
