@@ -21,30 +21,6 @@ function solicitarNombre() {
 // Llamar a la función para solicitar y mostrar el nombre
 solicitarNombre();
 
-// Datos de destinos y precios en JSON
-const preciosViajes = {
-    "destinos": [
-        {
-            "pais": "Chile",
-            "ciudades": [
-                { "nombre": "Villarrica", "precio": 100000 },
-                { "nombre": "Freire", "precio": 80000 }
-            ]
-        },
-        {
-            "pais": "Inglaterra",
-            "ciudades": [
-                { "nombre": "Londres", "precio": 2000000 }
-            ]
-        },
-        {
-            "pais": "Francia",
-            "ciudades": [
-                { "nombre": "Paris", "precio": 1800000 }
-            ]
-        }
-    ]
-};
 
 // Función para cargar las ciudades relacionadas al país seleccionado
 function cargarCiudades(paisSeleccionado) {

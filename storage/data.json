@@ -11,12 +11,14 @@
             "pais": "Inglaterra",
             "ciudades": [
                 { "nombre": "Londres", "precio": 2000000 }
+                { "nombre": "Liverpool", "precio": 80000 }
             ]
         },
         {
             "pais": "Francia",
             "ciudades": [
                 { "nombre": "Paris", "precio": 1800000 }
+                { "nombre": "Lyon", "precio": 1800000 }
             ]
         }
     ]
