@@ -4,6 +4,8 @@
     background-color: v.$transparencia;
     padding: 30px;
     border-radius: v.$border-radius;
+    max-width: 500px;
+    row-gap: 10px;
 }
 
 input#pais, select#ciudad, label {
@@ -15,4 +17,10 @@ input#pais, select#ciudad, label {
 input#pais, select#ciudad {
     max-width: 230px;
     width: 100%;
+}
+
+.valor-adicional p {
+    font-size: v.$h3;
+    color: v.$negro;
+    font-weight: v.$bold;
 }
