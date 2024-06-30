@@ -22,107 +22,58 @@ function solicitarNombre() {
 solicitarNombre();
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const paisSelect = document.getElementById('pais');
-    const ciudadSelect = document.getElementById('ciudad');
-    let preciosViajes = {};
+document.addEventListener('DOMContentLoaded', () => {
+    const paisInput = document.getElementById('pais');
+    const ciudadInput = document.getElementById('ciudad');
+    const resultadoDiv = document.getElementById('resultado');
 
-    // Función para cargar los datos desde el JSON
-    function cargarDatos() {
-        fetch('./storage/data.json')
-            .then(response => response.json())
-            .then(data => {
-                preciosViajes = data;
-                cargarPaises();
-            })
-            .catch(error => {
-                console.error('Error al cargar el archivo JSON:', error);
+    // Cargar datos desde el JSON
+    fetch('./storage/data.json')
+        .then(response => response.json())
+        .then(data => {
+            const destinos = data.destinos;
+
+            paisInput.addEventListener('input', () => {
+                const paisSeleccionado = paisInput.value;
+                const paisEncontrado = destinos.find(d => d.pais.toLowerCase() === paisSeleccionado.toLowerCase());
+
+                ciudadInput.innerHTML = '';
+
+                if (paisEncontrado) {
+                    paisEncontrado.ciudades.forEach(ciudad => {
+                        const option = document.createElement('option');
+                        option.value = ciudad.nombre;
+                        option.textContent = ciudad.nombre;
+                        ciudadInput.appendChild(option);
+                    });
+
+                    ciudadInput.disabled = false;
+                } else {
+                    ciudadInput.disabled = true;
+                }
+
+                mostrarPrecio();
             });
-    }
 
-    // Función para cargar las opciones de países
-    function cargarPaises() {
-        preciosViajes.destinos.forEach(destino => {
-            const option = document.createElement('option');
-            option.value = destino.pais;
-            option.textContent = destino.pais;
-            paisSelect.appendChild(option);
-        });
-    }
+            ciudadInput.addEventListener('input', mostrarPrecio);
 
-    // Función para cargar las ciudades relacionadas al país seleccionado
-    function cargarCiudades(paisSeleccionado) {
-        ciudadSelect.innerHTML = '<option value="">Selecciona una ciudad</option>';
+            function mostrarPrecio() {
+                const paisSeleccionado = paisInput.value;
+                const ciudadSeleccionada = ciudadInput.value;
+                const paisEncontrado = destinos.find(d => d.pais.toLowerCase() === paisSeleccionado.toLowerCase());
 
-        if (paisSeleccionado) {
-            const paisEncontrado = preciosViajes.destinos.find(destino => destino.pais === paisSeleccionado);
-            if (paisEncontrado) {
-                paisEncontrado.ciudades.forEach(ciudad => {
-                    const option = document.createElement('option');
-                    option.value = ciudad.nombre;
-                    option.textContent = ciudad.nombre;
-                    ciudadSelect.appendChild(option);
-                });
+                if (paisEncontrado) {
+                    const ciudadEncontrada = paisEncontrado.ciudades.find(c => c.nombre.toLowerCase() === ciudadSeleccionada.toLowerCase());
+
+                    if (ciudadEncontrada) {
+                        resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${ciudadEncontrada.precio}`;
+                    } else {
+                        resultadoDiv.textContent = `No tenemos información sobre la ciudad ${ciudadSeleccionada}`;
+                    }
+                } else {
+                    resultadoDiv.textContent = `No tenemos información sobre el país ${paisSeleccionado}`;
+                }
             }
-        }
-    }
-
-    // Función para obtener el precio del viaje
-    function obtenerPrecio(pais, ciudad) {
-        const paisEncontrado = preciosViajes.destinos.find(destino => destino.pais === pais);
-        if (paisEncontrado) {
-            const ciudadEncontrada = paisEncontrado.ciudades.find(c => c.nombre === ciudad);
-            if (ciudadEncontrada) {
-                return ciudadEncontrada.precio;
-            }
-        }
-        return 0;
-    }
-
-    // Escuchar cambios en la selección de país
-    paisSelect.addEventListener('change', function() {
-        const paisSeleccionado = paisSelect.value;
-        cargarCiudades(paisSeleccionado);
-    });
-
-    // Escuchar cambios en la selección de ciudad
-    ciudadSelect.addEventListener('change', function() {
-        const pais = paisSelect.value;
-        const ciudad = ciudadSelect.value;
-        const resultadoCotizacion = document.getElementById('resultadoCotizacion');
-
-        if (ciudad) {
-            const precioIdaYVuelta = obtenerPrecio(pais, ciudad) * 2;
-            resultadoCotizacion.innerHTML = `
-                <p>El precio de ida y vuelta a <strong>${ciudad}, ${pais}</strong> es <strong>${precioIdaYVuelta} CLP</strong>.</p>
-            `;
-        } else {
-            resultadoCotizacion.innerHTML = `
-                <p>Selecciona un país y una ciudad para obtener el precio.</p>
-            `;
-        }
-    });
-
-    // Manejar la solicitud de cotización
-    document.getElementById('cotizadorForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const pais = paisSelect.value;
-        const ciudad = ciudadSelect.value;
-        const resultadoCotizacion = document.getElementById('resultadoCotizacion');
-
-        if (ciudad) {
-            const precioIdaYVuelta = obtenerPrecio(pais, ciudad) * 2;
-            resultadoCotizacion.innerHTML = `
-                <p>El precio de ida y vuelta a <strong>${ciudad}, ${pais}</strong> es <strong>${precioIdaYVuelta} CLP</strong>.</p>
-            `;
-        } else {
-            resultadoCotizacion.innerHTML = `
-                <p>Selecciona un país y una ciudad para obtener el precio.</p>
-            `;
-        }
-    });
-
-    // Cargar los datos desde el archivo JSON al cargar la página
-    cargarDatos();
+        })
+        .catch(error => console.error('Error al cargar el JSON:', error));
 });
