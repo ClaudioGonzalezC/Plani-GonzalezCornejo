@@ -1,7 +1,23 @@
 {
-    "Villarrica, Chile": 100000,
-    "Freire, Chile": 80000,
-    "Londres, Inglaterra": 2000000,
-    "Paris, Francia": 1800000,
-    "Santiago, Chile": 1800000
+    "destinos": [
+        {
+            "pais": "Chile",
+            "ciudades": [
+                { "nombre": "Villarrica", "precio": 100000 },
+                { "nombre": "Freire", "precio": 80000 }
+            ]
+        },
+        {
+            "pais": "Inglaterra",
+            "ciudades": [
+                { "nombre": "Londres", "precio": 2000000 }
+            ]
+        },
+        {
+            "pais": "Francia",
+            "ciudades": [
+                { "nombre": "Paris", "precio": 1800000 }
+            ]
+        }
+    ]
 }
