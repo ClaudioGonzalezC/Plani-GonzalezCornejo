@@ -1,24 +1,15 @@
-// Función para solicitar el nombre y mostrarlo
 function solicitarNombre() {
-    // Obtener el nombre del almacenamiento local
     let nombre = localStorage.getItem('nombre');
-    
-    // Si no hay nombre en el almacenamiento local, solicitarlo al usuario
     if (!nombre) {
         nombre = prompt('Por favor, introduce tu nombre:');
-        
-        // Guardar el nombre en el almacenamiento local
         localStorage.setItem('nombre', nombre);
     }
-    
-    // Mostrar el nombre en todos los elementos con la clase 'nombreUsuario'
     const elementosNombreUsuario = document.querySelectorAll('.nombreUsuario');
     elementosNombreUsuario.forEach(elemento => {
         elemento.textContent = `${nombre}`;
     });
 }
 
-// Llamar a la función para solicitar y mostrar el nombre
 solicitarNombre();
 
 
@@ -30,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const valorSeguro = 50000;
 
-    // Cargar datos desde el JSON
     fetch('./storage/data.json')
         .then(response => response.json())
         .then(data => {
@@ -74,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         const precioTotal = seguroInput.checked ? precioViaje + valorSeguro : precioViaje;
                         resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${precioTotal.toLocaleString()} (${seguroInput.checked ? 'con' : 'sin'} seguro)`;
                     } else {
-                        resultadoDiv.textContent = `No tenemos información sobre la ciudad ${ciudadSeleccionada}`;
+                        resultadoDiv.textContent = `No existe información sobre la ciudad ${ciudadSeleccionada}`;
                     }
                 } else {
-                    resultadoDiv.textContent = `No tenemos información sobre el país ${paisSeleccionado}`;
+                    resultadoDiv.textContent = `No existe información sobre el país ${paisSeleccionado}`;
                 }
             }
         })

@@ -598,6 +598,12 @@ header {
   overflow: hidden;
 }
 
+button, input, optgroup, select, textarea {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 400;
+}
+
 /*** Navegacion ***/
 .header__logo h1 {
   font-family: "Outfit", sans-serif;
