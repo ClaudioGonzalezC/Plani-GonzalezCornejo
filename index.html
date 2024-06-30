@@ -85,8 +85,19 @@
             </section>
             <section class="header__busqueda">
                 <form id="cotizadorForm">
-                    <label for="destino">Destino:</label>
-                    <input type="text" id="destino" name="destino" required>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona un país</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Inglaterra">Inglaterra</option>
+                        <option value="Francia">Francia</option>
+                    </select>
+                    <br>
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona una ciudad</option>
+                    </select>
+                    <br>
                     <button type="submit">Cotizar</button>
                 </form>
                 <div id="resultadoCotizacion"></div>
