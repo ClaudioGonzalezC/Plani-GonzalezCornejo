@@ -20,6 +20,13 @@
                 { "nombre": "Paris", "precio": 1800000 },
                 { "nombre": "Lyon", "precio": 1800000 }
             ]
+        },
+        {
+            "pais": "Argentina",
+            "ciudades": [
+                { "nombre": "Buenos Aires", "precio": 1800000 },
+                { "nombre": "Mendoza", "precio": 1800000 }
+            ]
         }
     ]
 }
