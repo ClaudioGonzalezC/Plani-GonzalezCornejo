@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (ciudadEncontrada) {
                         const precioViaje = ciudadEncontrada.precio;
                         const precioTotal = seguroInput.checked ? precioViaje + valorSeguro : precioViaje;
-                        resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${precioTotal} (${seguroInput.checked ? 'con' : 'sin'} seguro)`;
+                        resultadoDiv.textContent = `El precio del viaje a ${ciudadSeleccionada}, ${paisSeleccionado} es $${precioTotal.toLocaleString()} (${seguroInput.checked ? 'con' : 'sin'} seguro)`;
                     } else {
                         resultadoDiv.textContent = `No tenemos información sobre la ciudad ${ciudadSeleccionada}`;
                     }
