@@ -623,10 +623,14 @@ header {
 
 .item1 {
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .item2 {
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .item3 {
@@ -644,6 +648,20 @@ input#pais, select#ciudad {
   width: 100%;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
 .valor__adicional p {
   font-size: 1.6em;
   color: #363636;
@@ -654,6 +672,20 @@ input#pais, select#ciudad {
   font-size: 1.6em;
   color: #363636;
   font-weight: 400;
+}
+
+.header__busqueda button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header__busqueda button:hover {
+  background-color: #0056b3;
 }
 
 /*** Navegacion ***/
