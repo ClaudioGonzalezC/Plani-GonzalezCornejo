@@ -1,7 +1,11 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
 .header__busqueda {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: v.$transparencia;
+    backdrop-filter: v.$blur;
     padding: 30px;
     border-radius: v.$border-radius;
     max-width: 500px;

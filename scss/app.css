@@ -601,9 +601,13 @@ header {
 .header__busqueda {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 18px;
+  max-width: 500px;
+  row-gap: 10px;
 }
 
 input#pais, select#ciudad, label {
@@ -615,6 +619,12 @@ input#pais, select#ciudad, label {
 input#pais, select#ciudad {
   max-width: 230px;
   width: 100%;
+}
+
+.valor-adicional p {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 400;
 }
 
 /*** Navegacion ***/
