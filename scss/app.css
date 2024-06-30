@@ -630,7 +630,7 @@ input#pais, select#ciudad {
   font-weight: 400;
 }
 
-.container {
+.container__input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
