@@ -179,6 +179,147 @@
                 { "nombre": "Malmö", "precio": 1600000 },
                 { "nombre": "Uppsala", "precio": 1500000 }
             ]
+        },
+        {
+            "pais": "Noruega",
+            "ciudades": [
+                { "nombre": "Oslo", "precio": 2100000 },
+                { "nombre": "Bergen", "precio": 2000000 }
+            ]
+        },
+        {
+            "pais": "Dinamarca",
+            "ciudades": [
+                { "nombre": "Copenhague", "precio": 2200000 },
+                { "nombre": "Aarhus", "precio": 2100000 }
+            ]
+        },
+        {
+            "pais": "Finlandia",
+            "ciudades": [
+                { "nombre": "Helsinki", "precio": 2000000 },
+                { "nombre": "Espoo", "precio": 1900000 }
+            ]
+        },
+        {
+            "pais": "Irlanda",
+            "ciudades": [
+                { "nombre": "Dublín", "precio": 2200000 },
+                { "nombre": "Cork", "precio": 2100000 },
+                { "nombre": "Limerick", "precio": 1900000 }
+            ]
+        },
+        {
+            "pais": "Portugal",
+            "ciudades": [
+                { "nombre": "Lisboa", "precio": 1900000 },
+                { "nombre": "Oporto", "precio": 1800000 }
+            ]
+        },
+        {
+            "pais": "Suiza",
+            "ciudades": [
+                { "nombre": "Zúrich", "precio": 2400000 },
+                { "nombre": "Ginebra", "precio": 2300000 }
+            ]
+        },
+        {
+            "pais": "Países Bajos",
+            "ciudades": [
+                { "nombre": "Ámsterdam", "precio": 2300000 },
+                { "nombre": "Róterdam", "precio": 2200000 }
+            ]
+        },
+        {
+            "pais": "Bélgica",
+            "ciudades": [
+                { "nombre": "Bruselas", "precio": 2000000 },
+                { "nombre": "Amberes", "precio": 1900000 }
+            ]
+        },
+        {
+            "pais": "Austria",
+            "ciudades": [
+                { "nombre": "Viena", "precio": 2100000 },
+                { "nombre": "Salzburgo", "precio": 2000000 }
+            ]
+        },
+        {
+            "pais": "Grecia",
+            "ciudades": [
+                { "nombre": "Atenas", "precio": 1800000 },
+                { "nombre": "Tesalónica", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "Turquía",
+            "ciudades": [
+                { "nombre": "Estambul", "precio": 1900000 },
+                { "nombre": "Ankara", "precio": 1800000 }
+            ]
+        },
+        {
+            "pais": "Egipto",
+            "ciudades": [
+                { "nombre": "El Cairo", "precio": 1700000 },
+                { "nombre": "Alejandría", "precio": 1600000 }
+            ]
+        },
+        {
+            "pais": "Marruecos",
+            "ciudades": [
+                { "nombre": "Marrakech", "precio": 1500000 },
+                { "nombre": "Casablanca", "precio": 1400000 }
+            ]
+        },
+        {
+            "pais": "Perú",
+            "ciudades": [
+                { "nombre": "Lima", "precio": 1800000 },
+                { "nombre": "Cusco", "precio": 1700000 }
+            ]
+        },
+        {
+            "pais": "Colombia",
+            "ciudades": [
+                { "nombre": "Bogotá", "precio": 1900000 },
+                { "nombre": "Medellín", "precio": 1800000 }
+            ]
+        },
+        {
+            "pais": "Chile",
+            "ciudades": [
+                { "nombre": "Santiago", "precio": 1500000 },
+                { "nombre": "Valparaíso", "precio": 1400000 }
+            ]
+        },
+        {
+            "pais": "Uruguay",
+            "ciudades": [
+                { "nombre": "Montevideo", "precio": 1600000 },
+                { "nombre": "Punta del Este", "precio": 1500000 }
+            ]
+        },
+        {
+            "pais": "Bolivia",
+            "ciudades": [
+                { "nombre": "La Paz", "precio": 1700000 },
+                { "nombre": "Santa Cruz", "precio": 1600000 }
+            ]
+        },
+        {
+            "pais": "Paraguay",
+            "ciudades": [
+                { "nombre": "Asunción", "precio": 1500000 },
+                { "nombre": "Ciudad del Este", "precio": 1400000 }
+            ]
+        },
+        {
+            "pais": "Venezuela",
+            "ciudades": [
+                { "nombre": "Caracas", "precio": 1600000 },
+                { "nombre": "Maracaibo", "precio": 1500000 }
+            ]
         }
     ]
 }
